@@ -1,0 +1,4 @@
+<h1><%= @restaurant.name %> - <%= '*' * @restaurant.rating %></h1>
+<h3><%= @restaurant.address %></h3>
+
+<p><%= link_to "Destroy #{@restaurant.name}", restaurant_path(@restaurant), method: :delete, data: {confirm: "Are you sure you want to destroy #{@restaurant.name}"}  %></p>
